@@ -52,7 +52,7 @@ def read_file():
     while loop_count < page_nums:
         page_obj = read_pdf.getPage(loop_count)
         loop_count += 1
-        page_text += page_obj.extractText()
+        page_text += page_obj.extract_text
 
     # Lowercase each word
     page_text = str(page_text.encode('ascii','ignore').lower())
